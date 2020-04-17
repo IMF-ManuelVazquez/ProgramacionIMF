@@ -2,22 +2,22 @@ package boletines.boletin3C.bol3_POO.Apartado3.Ejercicio1;
 
 public class Gato {
 	
-	private String nombreGato;
+	private String nameGato;
 
 	public Gato(String nombreGato) {
-		this.nombreGato = nombreGato;
+		this.nameGato = nombreGato;
 	}
 
 	public String getNombreGato() {
-		return nombreGato;
+		return nameGato;
 	}
 
 	public void setNombreGato(String nombreGato) {
-		this.nombreGato = nombreGato;
+		this.nameGato = nombreGato;
 	}
 
 	@Override
 	public String toString() {
-		return "Gato [nombreGato=" + nombreGato + "]";
+		return "Gato [nombreGato=" + nameGato + "]";
 	}
 }
