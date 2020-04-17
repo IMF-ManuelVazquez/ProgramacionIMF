@@ -9,7 +9,6 @@ public class Disco {
 	private String titulo;
 	private String genero;
 	private int duracion;
-	private int id;
 	
 	// String >>> Integer >>> Integer.parseInt(String)
 	// Integer >> String  >>> String.valueOf(int)
