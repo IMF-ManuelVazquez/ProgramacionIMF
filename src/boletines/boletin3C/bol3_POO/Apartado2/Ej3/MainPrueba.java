@@ -7,7 +7,7 @@ public class MainPrueba {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		ColeccionDeDiscos coleccion = new ColeccionDeDiscos();
+		ColeccionDeDiscos coleccion = new ColeccionDeDiscos();  // constructor por defecto.
 		
 		System.out.println(coleccion);
 		
@@ -26,6 +26,12 @@ public class MainPrueba {
 		
 		coleccion.annadirDisco(autor2, titulo2, genero2, duracion2);
 		
+		System.out.println(coleccion);
+		Scanner entraEscaner = new Scanner(System.in);
+		System.out.println("codigo a elminiar");
+		String codigoEliminar = entraEscaner.nextLine();
+		
+		coleccion.retirarDisco(codigoEliminar);
 		System.out.println(coleccion);
 
 	}

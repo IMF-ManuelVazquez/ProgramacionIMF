@@ -8,10 +8,12 @@ import java.util.Arrays;
 
 public class ColeccionDeDiscos {
 	
-	private Disco[] coleccion = new Disco[10]; 
+	private final int NUMERO_DISCOS_MAXIMO = 10;
+	private Disco[] coleccion = new Disco[NUMERO_DISCOS_MAXIMO]; 
 
 	// Constructor default
 	public ColeccionDeDiscos() {
+		
 	}
 	
 	private int obtenerPrimeraPosicionDisponible() {
@@ -36,9 +38,18 @@ public class ColeccionDeDiscos {
 		int posicionDisponible = obtenerPrimeraPosicionDisponible();
 		Disco newDisco = new Disco(autor, titulo, genero, duracion);
 		coleccion[posicionDisponible] = newDisco;
-		
 		// coleccion[obtenerPrimeraPosicionDisponible()]= new Disco(autor, titulo, genero, duracion);
-		
+	}
+	
+	public void retirarDisco(String id) {
+		for (int i = 0; i < coleccion.length; i++) {
+			Disco obj = coleccion[i];
+			if (obj != null) {
+				if (obj.getCodigo().equals(id)) {
+					coleccion[i]=null;
+				}
+			}
+		}
 	}
 
 	@Override

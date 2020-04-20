@@ -12,6 +12,7 @@ public class Disco {
 	
 	// String >>> Integer >>> Integer.parseInt(String)
 	// Integer >> String  >>> String.valueOf(int)
+	// 2344455555   4213213
 	
 	public Disco(String autor, String titulo, String genero, int duracion) {
 		//this.codigo = Integer.toString(Math.abs(new Random().nextInt()));  // String vs int
