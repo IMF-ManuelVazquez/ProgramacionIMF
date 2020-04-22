@@ -1,4 +1,4 @@
-package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.HerenciaAnimal;
+package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.Herencia2;
 
 public class Animal {
 	
@@ -7,9 +7,9 @@ public class Animal {
 	private String tipoAlimentacion;
 	
 	public Animal() {
-		super();
+		// TODO Auto-generated constructor stub
 	}
-
+	
 	public Animal(String especie, String color, String tipoAlimentacion) {
 		super();
 		this.especie = especie;
