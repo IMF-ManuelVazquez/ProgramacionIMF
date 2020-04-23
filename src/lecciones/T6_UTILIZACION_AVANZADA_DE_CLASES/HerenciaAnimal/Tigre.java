@@ -20,6 +20,7 @@ public class Tigre extends Animal{
 	
 	public void rugir() {
 		System.out.println("El tigre ruge");
+		super.dormir();
 	}
 
 }
