@@ -1,7 +1,5 @@
 package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.HerenciaAnimal;
 
-import lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.Herencia2.Animal;
-
 public class Jirafa extends Animal{
 
 	private int longitudCuello;
@@ -11,6 +9,11 @@ public class Jirafa extends Animal{
 		super(especie, color, tipoAlimentacion);
 		this.longitudCuello = longitudCuello;
 		this.longitudPatas = longitudPatas;
+	}
+	
+	@Override
+	public void dormir() {
+		System.out.println("recoge el cuello como una persiana");
 	}
 	
 	public void alcanzarCimaArbol() {

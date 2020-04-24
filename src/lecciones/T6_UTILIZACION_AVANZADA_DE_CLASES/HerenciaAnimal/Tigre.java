@@ -1,7 +1,5 @@
 package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.HerenciaAnimal;
 
-import lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.Herencia2.Animal;
-
 public class Tigre extends Animal{
 	
 	private int velocidad;
@@ -18,9 +16,18 @@ public class Tigre extends Animal{
 		System.out.println("El tigre tras comer se relame");
 	}
 	
+	@Override
+	public void dormir() {
+		System.out.println("el tigre ronca bastante");
+	}
+	
 	public void rugir() {
 		System.out.println("El tigre ruge");
 		super.dormir();
+	}
+	
+	public int getVelocidad() {
+		return velocidad;
 	}
 
 }
