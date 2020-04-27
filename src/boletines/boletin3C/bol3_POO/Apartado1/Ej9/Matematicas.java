@@ -2,10 +2,6 @@ package boletines.boletin3C.bol3_POO.Apartado1.Ej9;
 
 public class Matematicas {
 
-	
-	// 3223  >>> "3223"     "321123"
-	// 3323
-	
 	public static boolean esCapicua(int num) {
 		
 		String str = String.valueOf(num);
@@ -43,6 +39,12 @@ public class Matematicas {
 	
 	
 	public static double potencia (int base, int exp) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return Math.pow(base, exp);
 	}
   
@@ -76,22 +78,10 @@ public class Matematicas {
 	// 123   4  >> -1     2   >> 1
 	public static int posicionDeDigito(int num, int digitoBuscado) {
 		char inChar = String.valueOf(digitoBuscado).charAt(0);
-		
 		System.out.println("Buscando in Char: "+inChar);
-		
 		String str = String.valueOf(num);
-		
-//		for (int i = 0; i < str.length(); i++) {
-//			if (str.charAt(i)==inChar) {
-//				return i;
-//			}
-//		}
-//		
-//		return -1;
-		
 		return str.indexOf(inChar);
 	}
-	
 	
 	// 12345   quitePorDestras(2)    123
 	public static int quitaPorDetras(int num, int numeroDeDigitos) {

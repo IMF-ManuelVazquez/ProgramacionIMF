@@ -1,6 +1,6 @@
 package boletines.boletin3C.bol3_POO.Apartado1.Ej9;
 
-public class MainMattematicas {
+public class MainMatematicas {
 
 	public static void main(String[] args) {
 		

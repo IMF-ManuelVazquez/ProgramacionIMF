@@ -1,4 +1,4 @@
-package boletines.boletin3C.bol3_POO.Apartado3.Ejercicio1;
+package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.Multi_Camada;
 
 public class CamadaGatitos {
 
