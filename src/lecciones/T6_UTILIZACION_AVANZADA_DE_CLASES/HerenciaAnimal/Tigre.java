@@ -30,4 +30,6 @@ public class Tigre extends Animal{
 		return velocidad;
 	}
 
+
+
 }

@@ -19,6 +19,7 @@ public class Jirafa extends Animal{
 	public void alcanzarCimaArbol() {
 		System.out.println("La jirafa alcanza la cima");
 	}
+
 	
 	
 }

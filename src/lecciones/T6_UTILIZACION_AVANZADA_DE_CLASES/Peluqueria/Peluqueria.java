@@ -25,6 +25,14 @@ public class Peluqueria {
 		return this.servicio.getPrecio() - (this.servicio.getPrecio() * this.descuento.getDescuento());
 	}
 	
+	public void mostrarPrecios() {
+		System.out.println(Servicios.LAVADO.getPrecio());
+		System.out.println(Servicios.CORTE.getPrecio());
+		System.out.println(Servicios.AFEITADO.getPrecio());
+		System.out.println(Servicios.TINTE.getPrecio());
+	}
+	
+	
 	
 //	public double calcularImporte() {
 //		double precio= 0;

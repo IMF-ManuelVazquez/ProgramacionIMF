@@ -5,6 +5,7 @@ public class MainProductos {
 	public static void main(String[] args) {
 		
 		// polimorfismo : Pade hija-- Herencia &&  Interfaz 
+		Producto producto = new Producto("fff", 5, 1.5);
 		Producto perecedero = new Perecedero("leche", 12, 1, 1);
 		Producto noPerecedero = new NoPerecedero("cacahuetes", 2, 3.2, "fruto seco");
 		

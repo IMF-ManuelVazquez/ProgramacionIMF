@@ -1,6 +1,6 @@
 package lecciones.T6_UTILIZACION_AVANZADA_DE_CLASES.HerenciaAnimal;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String especie;
 	private String color;
@@ -51,6 +51,10 @@ public class Animal {
 	
 	public void dormir() {
 		System.out.println("Animal esta durmiendo");
+	}
+	
+	public void respirar() {
+
 	}
 	
 	private void algoPrivado() {

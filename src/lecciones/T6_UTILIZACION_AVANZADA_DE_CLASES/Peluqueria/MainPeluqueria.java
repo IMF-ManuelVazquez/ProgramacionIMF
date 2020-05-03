@@ -7,14 +7,14 @@ public class MainPeluqueria {
 		Peluqueria pelu = new Peluqueria(Servicios.CORTE, Descuentos.PREMIUM);
 		System.out.println(pelu.calcularImporte());
 		
-		
 //		Servicios servicio = Servicios.CORTE;
 //		System.out.println(servicio.getPrecio());
 //		System.out.println(servicio.getPrecio1());
 //		System.out.println(servicio.getPrecio2());
-//		
 //		Descuentos descuento = Descuentos.GOLD;
 //		System.out.println(descuento.getDescuento());
+		
+		Servicios servicio;
 
 	}
 
