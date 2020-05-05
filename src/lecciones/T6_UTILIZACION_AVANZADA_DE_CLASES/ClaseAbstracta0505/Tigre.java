@@ -4,8 +4,6 @@ public class Tigre extends Animal{
 
 	@Override
 	public void comer() {
-		// TODO Auto-generated method stub
-		
 	}
 	
 
