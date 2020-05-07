@@ -1,4 +1,4 @@
-package lecciones.T8_COLECCIONES_DE_DATOS.ArrayList;
+package lecciones.T8_COLECCIONES_DE_DATOS.VideoLeccion;
 
 import java.util.ArrayList;
 
