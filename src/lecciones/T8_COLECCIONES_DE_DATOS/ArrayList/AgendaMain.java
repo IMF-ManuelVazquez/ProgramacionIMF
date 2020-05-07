@@ -61,9 +61,13 @@ public class AgendaMain {
 		System.out.println("Despues");
 		System.out.println("size: "+ agenda.size());
 		for (Persona persona : agenda) {
-			System.out.println(persona.getNombre());
+			System.out.println(persona);
 		}
 
+		
+		System.out.println(agenda);
+		
+		
 
 	}
 
