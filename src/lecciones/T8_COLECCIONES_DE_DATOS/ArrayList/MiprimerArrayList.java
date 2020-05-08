@@ -23,9 +23,8 @@ public class MiprimerArrayList {
 		String nombre = agendaContactos.get(1);
 		System.out.println(nombre);
 		
-		agendaContactos.set(1, "Manu");
-		
-		agendaContactos.add(null);
+		//agendaContactos.set(1, "David");
+		agendaContactos.add("David");
 		System.out.println(agendaContactos.size());
 		
 		agendaContactos.set(3, "Enrique");
@@ -40,8 +39,22 @@ public class MiprimerArrayList {
 		//System.out.println(agendaContactos.size());
 		
 		System.out.println(agendaContactos.contains("David"));
-		System.out.println(agendaContactos.indexOf("Gonzalo"));
+		System.out.println(agendaContactos.contains("Gonzalo"));
 		
+		System.out.println(agendaContactos.indexOf("Gonzalo"));
+		System.out.println(agendaContactos.indexOf("Manuel"));
+		
+		// FOR CLASICO.
+		for (int i = 0; i < agendaContactos.size(); i++) {   // 0   y 1
+			String str = agendaContactos.get(i);
+			System.out.println(str);
+			//System.out.println(agendaContactos.get(i));
+		}
+		
+		// FOREACH
+		for (String str : agendaContactos) {
+			System.out.println(str);
+		}
 		
 	}
 
