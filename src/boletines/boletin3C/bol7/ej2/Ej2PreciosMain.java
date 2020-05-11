@@ -1,4 +1,4 @@
-package boletines.boletin3C.bol5_POO_Abstract_Interface.Apartado2.Ej2;
+package boletines.boletin3C.bol7.ej2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
