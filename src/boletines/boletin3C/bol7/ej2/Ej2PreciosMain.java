@@ -28,7 +28,8 @@ public class Ej2PreciosMain {
 			}else if (seleccion==2) {
 				mostrarPrecios();
 			}else if (seleccion==3) {
-				eliminarPrecio();
+				//eliminarPrecio();
+				removeAll();
 			}else if (seleccion==4) {
 				precioMedio();
 			}else if (seleccion==5) {
@@ -112,6 +113,17 @@ public class Ej2PreciosMain {
 			}
 		}
 		System.out.println("El maximo es: "+precioMin);
+	}
+	
+	public static void removeAll() {
+		System.out.println(precios.size());
+		for (int i = precios.size()-1; i >= 0; i--) {
+			
+			System.out.println(precios.remove(i));
+			
+		}
+		
+		System.out.println(precios.size());
 	}
 	
 }
