@@ -23,7 +23,7 @@ public class ManejoExcepciones {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		
+
 		
 		
 	}
@@ -56,10 +56,19 @@ public class ManejoExcepciones {
 	
 	public static void errorVectores() {
 		
-		
+		try {
 			int[] v = new int[5];
 			System.out.println(v[6]);
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
 		
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 	}
 	
