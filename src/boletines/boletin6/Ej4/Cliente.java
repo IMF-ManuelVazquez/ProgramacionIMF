@@ -70,10 +70,12 @@ public class Cliente {
 		System.out.println("********************************************");
 		
 		for (int i = 0; i < DatosSolicitados.values().length; i++) {
+			
 			System.out.print("Introduzca el siguiente dato, ");
 			System.out.print(DatosSolicitados.values()[i]);
 			System.out.print(" : ");
 			datos[i] = entrada.nextLine();
+			
 		}
 		
 		return datos;
