@@ -1,10 +1,10 @@
-package boletines.boletin6.Ej4;
+package boletines.boletin3C.bol6.Ej4;
 
 import java.util.Scanner;
 
-import boletines.boletin6.Ej4.excepciones.CampoVacio;
-import boletines.boletin6.Ej4.excepciones.DetectadoMenorEdad;
-import boletines.boletin6.Ej4.excepciones.FormatoDatoIncorrecto;
+import boletines.boletin3C.bol6.Ej4.excepciones.CampoVacio;
+import boletines.boletin3C.bol6.Ej4.excepciones.DetectadoMenorEdad;
+import boletines.boletin3C.bol6.Ej4.excepciones.FormatoDatoIncorrecto;
 
 public class Cliente {
 	

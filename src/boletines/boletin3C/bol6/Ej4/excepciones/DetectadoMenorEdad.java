@@ -1,4 +1,4 @@
-package boletines.boletin6.Ej4.excepciones;
+package boletines.boletin3C.bol6.Ej4.excepciones;
 
 public class DetectadoMenorEdad extends RuntimeException{
 
