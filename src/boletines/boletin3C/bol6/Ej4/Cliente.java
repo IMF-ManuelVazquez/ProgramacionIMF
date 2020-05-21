@@ -60,22 +60,18 @@ public class Cliente {
 		return "Cliente [nombre=" + nombre + ", email=" + email + ", edad=" + edad + "]";
 	}
 	
-	
 	// Solicitar datos del cliente [nombre, email, edad] vector de String de 3 posiciones.
 	public static String[] solicitarDatos() {
 		
 		Scanner entrada = new Scanner(System.in);
 		String[] datos = new String[3];
-		
 		System.out.println("********************************************");
 		
 		for (int i = 0; i < DatosSolicitados.values().length; i++) {
-			
 			System.out.print("Introduzca el siguiente dato, ");
 			System.out.print(DatosSolicitados.values()[i]);
 			System.out.print(" : ");
 			datos[i] = entrada.nextLine();
-			
 		}
 		
 		return datos;
