@@ -44,6 +44,7 @@ public class UsandoSerializacion {
 			ObjectInputStream lecturaObjetoAlumno = new ObjectInputStream(new FileInputStream(pathname));
 			alumnoLeido = (Alumno) lecturaObjetoAlumno.readObject();
 			
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
