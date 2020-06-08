@@ -45,6 +45,16 @@ public class ArrayListDouble {
 		System.out.println("RESULTADO DE LAS LISTAS TRAS TANTO ROLLO");
 		System.out.println("ArraList1 "+arrList1);
 		System.out.println("ArraList2 "+arrList2);
+		
+		
+		
+		ArrayList<String> listaCompra = new ArrayList<String>();
+		ArrayList<String> listaCompra2 = new ArrayList<String>();
+		
+		ArrayList<String> listaCompra3 = new ArrayList<String>();
+		listaCompra.addAll(listaCompra);
+		listaCompra.addAll(listaCompra2);
+		
 	}
 	
 	public static double obtenerMaximo(ArrayList<Double> listInput) {

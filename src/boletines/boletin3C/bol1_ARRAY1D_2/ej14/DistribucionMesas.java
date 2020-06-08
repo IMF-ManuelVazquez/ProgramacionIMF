@@ -19,28 +19,38 @@ public class DistribucionMesas {
 		
 		int salir = 0;
 		do {
-			int numeroComensales = preguntarNumeroUsuarios();
-			System.out.println("FIN: "+ numeroComensales);
 			
-			int mesaVacia = buscarMesaVacia(mesas);
-			System.out.println("MesaVacia: "+(mesaVacia+1));
-			
-			if (mesaVacia==-1) {
-				int mesaDisponible = buscarMesaHastaLlenar(mesas, numeroComensales);
-				if (mesaDisponible==-1) {
-					System.out.println("No entrais lo siento buscar otro restaurante");
+			try {
+				
+				int numeroComensales = preguntarNumeroUsuarios();
+				System.out.println("FIN: "+ numeroComensales);
+				
+				int mesaVacia = buscarMesaVacia(mesas);
+				System.out.println("MesaVacia: "+(mesaVacia+1));
+				
+				if (mesaVacia==-1) {
+					int mesaDisponible = buscarMesaHastaLlenar(mesas, numeroComensales);
+					if (mesaDisponible==-1) {
+						System.out.println("No entrais lo siento buscar otro restaurante");
+					}else {
+						mesas[mesaDisponible] = mesas[mesaDisponible] + numeroComensales;
+						imprimirDistribucionMesas(mesas);
+					}
 				}else {
-					mesas[mesaDisponible] = mesas[mesaDisponible] + numeroComensales;
+					mesas[mesaVacia] = numeroComensales;
 					imprimirDistribucionMesas(mesas);
 				}
-			}else {
-				mesas[mesaVacia] = numeroComensales;
-				imprimirDistribucionMesas(mesas);
+				
+				System.out.println("Quieres salir? Pulse 1");
+				Scanner entradaEscanner = new Scanner(System.in);
+				salir = entradaEscanner.nextInt();
+				
+			}catch (ArrayIndexOutOfBoundsException e) {
+				salir=-1;
+			}finally {
+				System.out.println("esto lo hace si o si.");
 			}
-			
-			System.out.println("Quieres salir? Pulse 1");
-			Scanner entradaEscanner = new Scanner(System.in);
-			salir = entradaEscanner.nextInt();
+	
 		}while (salir==0);
 		
 		
